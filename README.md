@@ -1,0 +1,1 @@
+This repo consists of html and css files. The languages used are html, css and javascript. This is animation is based on assistive touch on iphones with more exciting animations. This is a beginner friendly project.
