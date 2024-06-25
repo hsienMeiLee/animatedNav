@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated Nav</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="menu">
+        <div class="indicator"><i class='bx bx-plus' ></i></div>
+        <li style="--i:0">
+            <a href="#"><i class='bx bx-home-alt-2'></i></a>
+        </li>
+        <li style="--i:1">
+            <a href="#"><i class='bx bx-user' ></i></a>
+        </li>
+        <li style="--i:2">
+            <a href="#"><i class='bx bx-user' ></i></a>
+        </li>
+        <li style="--i:3">
+            <a href="#"><i class='bx bx-envelope' ></i></a>
+        </li>
+        <li style="--i:4">
+            <a href="#"><i class='bx bx-camera' ></i></a>
+        </li>
+        <li style="--i:5">
+            <a href="#"><i class='bx bx-video' ></i></a>
+        </li>
+        <li style="--i:6">
+            <a href="#"><i class='bx bx-game' ></i></a>
+        </li>
+        <li style="--i:7">
+            <a href="#"><i class='bx bx-menu' ></i></a>
+        </li>
+    </div>
+
+    <script>
+        let menu = document.querySelector(".menu");
+        let indicator = document.querySelector(".indicator");
+
+        indicator.onclick = function(){
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

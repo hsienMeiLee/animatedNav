@@ -1,0 +1,136 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, #d6ccc2, #d5bdaf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    width: 200px; height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    position: absolute;
+    transition: 0.5s;
+    left: 0;
+    transform-origin: 100px;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(calc(360deg /-8 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    color: black;
+    transition: 0.1s;
+}
+
+.menu li:hover a{
+    color: red;
+}
+
+.menu.active li{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.indicator{
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    z-index: 1000;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu.active .indicator{
+    transform: rotate(315deg);
+}
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    background: linear-gradient(45deg, #b0a294, #a08778);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ }
+
+ .menu{
+    width: 200px; height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .menu li{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+ }
+
+ .menu.active li{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+ }
+
+ .menu li a{
+    color: #333;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+ }
+
+ .menu li:hover a{
+    color: red;
+ }
+
+ .indicator{
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px; height: 60px;
+ }
